@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>animated</title>
+    <style>
+        img{
+            width: 300px;
+            transition: transform 1s ease-in;
+           background: none;
+        }
+        .field:hover img{
+           
+            transform: rotate(-45deg);
+            transform-origin: top right;
+           
+
+        }
+        .field{
+            
+            border: 1px solid grey;
+        }
+                .ball{
+                    width: 50px;
+            height: 50px;
+            background-color: red;
+            border-radius: 25px;
+            position: relative;
+            left: 385px;
+            top: -164px;
+            transition: transform .7s ease-in .9s;
+        }
+        h1{text-align: center;
+        font-size: 40px;
+        }
+        .field:hover .ball{
+            transform: translate(900px,-190px);
+
+        }
+        figcaption{text-align: center;
+        font-size: 30px;
+        font-weight: 800;
+        text-transform: capitalize;padding-top: 40px;
+        }
+    </style>
+</head>
+<body>
+    <h1>Play cricket </h1>
+  <section class="field">
+     
+        <img class="img" src="kdgoldside-scaled-1.jpg" alt="">
+        <div class="ball">
+
+        </div>
+    
+  </section>
+<figcaption>this is the caption of hard hitting batting. hurrah  big six!</figcaption>
+  
+</body>
+</html>
