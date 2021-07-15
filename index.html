@@ -19,8 +19,9 @@
            
 
         }
+       
         .field{
-            
+           
             border: 1px solid grey;
         }
                 .ball{
@@ -45,9 +46,36 @@
         font-weight: 800;
         text-transform: capitalize;padding-top: 40px;
         }
+        @media only screen and (max-width:688px) {
+            .wrap{
+                display: flex;
+                flex-direction: column;
+            }
+            .field{ width: 400px;}
+            .field img{
+                width: 100px;
+            }  
+            .field .ball{
+                width: 20px;
+                height: 20px;
+                position: relative;
+                left: 145px;
+                top: -50px;
+                transition: transform 1s ease-in .9s;
+
+            }
+            .field:hover img{
+                transform: rotate(-45deg);
+            }
+            .field:hover .ball{
+                transform: translate(300px,-200px);
+                
+
+            }
+        }
     </style>
 </head>
-<body>
+<body class="wrap">
     <h1>Play cricket </h1>
   <section class="field">
      
